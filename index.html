@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+  <h1>得点計算ツール</h1>
+  <form onsubmit="return false" id="tokuten" oninput="result.value = (Number(a1.value) + (Number(a2.value)*2 )+ (Number(a3.value)*3 )+ (Number(a4.value)*4 )+ (Number(a5.value)*5 )) * (Number(b1.value));">
+  <p>
+    １点のボール<input type="number" name="1ten" id="a1" value="" size="3">個
+  </p>
+  <p>
+    ２点のボール<input type="number" name="2ten" id="a2" value="" size="3">個
+  </p>
+  <p>
+    ３点のボール<input type="number" name="3ten" id="a3" value="" size="3">個
+  </p>
+  <p>
+    ４点のボール<input type="number" name="4ten" id="a4" value="" size="3">個
+  </p>
+  <p>
+    ５点のボール<input type="number" name="5ten" id="a5" value="" size="3">個
+  </p>
+  <p>
+  ラケットの種類<br>
+  <input type="radio" name="raket" value="1" id="b1">ラケット
+  <input type="radio" name="raket" value="2" id="b1">しゃもじ
+  <input type="radio" name="raket" value="2" id="b1">フライパン
+  <input type="radio" name="raket" value="3" id="b1">黒板消し
+  <input type="radio" name="raket" value="3" id="b1">スリッパ
+  <input type="radio" name="raket" value="5" id="b1">ピコピコハンマー
+  </p>
+  <p><input type="reset" value="リセット"></p>
+  </form>
+  <p>得点は<output name="result" form="tokuten">0</output>点</p>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
