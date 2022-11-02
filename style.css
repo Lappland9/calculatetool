@@ -3,11 +3,20 @@ body{
     
     }
     
-    h1 {
+h1 {
       position: static;
     }
     
-    p {
+p {
       font-size: 24px;
     
     }
+. op1 {
+      font-size: 36px;
+
+   }
+
+. op1out {
+      font-size: 72px;
+
+}
